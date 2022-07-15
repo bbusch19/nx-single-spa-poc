@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "child": "apps/child",
-    "mfe-root": "apps/mfe-root"
+    "mfe-root": "apps/mfe-root",
+    "react-child": "apps/react-child"
   }
 }

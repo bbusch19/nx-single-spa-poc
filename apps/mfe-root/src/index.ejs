@@ -35,7 +35,9 @@
     <script type="systemjs-importmap">
       {
         "imports": {
-          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+          "react": "https://unpkg.com/react@18/umd/react.development.js",
+          "react-dom": "https://unpkg.com/react-dom@18/umd/react-dom.development.js"
         }
       }
     </script>
@@ -53,7 +55,8 @@
       {
         "imports": {
           "@mfe/root-config": "//localhost:9000/mfe-root-config.js",
-          "@mfe/child": "//localhost:4200/main.js"
+          "@mfe/child": "//localhost:4200/main.js",
+          "@mfe/react-child": "//localhost:8080/mfe-react-child.js"
         }
       }
     </script>
