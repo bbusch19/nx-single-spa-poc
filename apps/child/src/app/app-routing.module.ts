@@ -6,14 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'test', component: TestComponent },
+  { path: 'child', component: HomeComponent },
+  { path: 'child/test', component: TestComponent },
   { path: '**', component: EmptyRouteComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/child' }],
+  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
 })
 export class AppRoutingModule {}
